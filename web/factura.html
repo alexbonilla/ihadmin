@@ -1,0 +1,213 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Imprimir Factura</title>
+        <link href="css/factura.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--<div style="background: url(fondo_imprimir.png) repeat;">-->
+        <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                    <td width="450" height="109" align="center" valign="middle"><img src="logo_claro.png"></td>
+                    <td width="450" rowspan="2" align="center" valign="middle">
+                        <table width="373" border="0" cellspacing="0" cellpadding="0" style="border:thin dashed #333;">
+                            <tbody><tr>
+                                    <td width="363" height="229" align="left" valign="top" style="padding:5px; padding-left:25px"><p class="sub-tit">RUC: <span id="ruc" class="prueba_txt2" style="padding-left:10px">1791251237001</span><br>
+                                                FACTURA<br>
+                                                    No.: <span id="numfactura" class="prueba_txt1">001-064-001093350</span><br>
+                                                        Número de Autorización:<br>
+                                                            <span id="numautorizacion" class="txt1">2709201407534817912512370010968085048</span><br>
+                                                                Fecha y hora de aut.:<span id="fechaautorizacion" class="txt1">27/09/2014 07:53:48</span> <br>
+                                                                    Ambiente: <span id="ambiente" class="txt1">Producción</span><br>
+                                                                        Emisión: <span id="tipoemision" class="txt1">Normal<br>
+                                                                                Clave de Acceso:
+                                                                                <br>
+                                                                                    <img id="imgclaveacceso" src="barcodeimage.php?&amp;text=2509201401179125123700120010640010933502620072913" alt="Clave de acceso">
+                                                                                        <span id="claveacceso" class="txt2" style="text-align:center;">2509201401179125123700120010640010933502620072913</span><br>
+                                                                                            </span></p></td>
+                                                                                            </tr>
+                                                                                            </tbody></table></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="135" align="center" valign="middle">
+                                                                                                    <table width="369" border="0" cellspacing="0" cellpadding="0" style="border:thin dashed #333;">
+                                                                                                        <tbody><tr>
+                                                                                                                <td width="361" align="left" valign="top" style="padding:5px"><p id="razonsocial_emisor" class="tit">Consorcio Ecuatoriano de Telecomunicaciones Conecel S.A.</p>
+                                                                                                                    <p class="sub-tit">Dir Matriz: <span id="direccion_matriz" class="txt1">Cdla. Kennedy Norte. Av. Fco. Orellana S/N y Av.Alberto Borges, Guayaquil</span><br>
+                                                                                                                            Dir Sucursal: <span id="direccion_sucursal" class="txt1">Cdla. Kennedy Norte. Av. Fco. Orellana S/N y Av.Alberto Borges, Guayaquil</span><br>
+                                                                                                                                Contribuyente Especial Nro.: <span id="contibespecial" class="txt1">5368</span><br>
+                                                                                                                                    Obligado a llevar contabilidad: <span id="obligadocontabilidad" class="txt1">Si</span></p></td>
+                                                                                                                                    </tr>
+                                                                                                                                    </tbody></table></td>
+                                                                                                                                    </tr>
+                                                                                                                                    <tr>
+                                                                                                                                        <td height="91" colspan="2" align="center" valign="middle"><table width="820" border="0" cellspacing="0" cellpadding="0" style="border:thin dashed #333;">
+                                                                                                                                                <tbody><tr>
+                                                                                                                                                        <td width="460" height="22" style="padding:5px" align="left"><span class="sub-tit">Razón Social / Nombres y Apellidos: 
+                                                                                                                                                            </span><span id="razonsocial_comprador" class="txt1">ALEX FERNANDO BONILLA GORDILLO</span></td>
+                                                                                                                                                        <td width="356" style="padding:5px" align="left"><span class="sub-tit">RUC/CI: </span><span id="identificacion_comprador" class="txt1">0913814455</span></td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px" align="left"><span class="sub-tit">Fecha Emisión: </span><span id="fechaemision" class="txt1">25/09/2014</span></td>
+                                                                                                                                                        <td width="356" style="padding:5px" align="left"><span class="sub-tit">Guía Remisión: </span></td>
+                                                                                                                                                    </tr>
+                                                                                                                                                </tbody></table></td>
+                                                                                                                                    </tr>
+                                                                                                                                    <tr>
+                                                                                                                                        <td height="48" colspan="2" align="center" valign="top"><table width="820" border="0" cellspacing="0" cellpadding="0">
+                                                                                                                                                <tbody>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td width="71" height="22" align="center" valign="middle" style="padding:5px; border:thin dashed #333;"><span class="sub-tit">Cod<br>
+                                                                                                                                                                    Principal</span></td>
+                                                                                                                                                        <td width="70" align="center" valign="middle" style="padding:5px; border:thin dashed #333;"><span class="sub-tit">Cod<br>
+                                                                                                                                                                    Auxiliar
+                                                                                                                                                            </span></td>
+                                                                                                                                                        <td width="55" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Cant</td>
+                                                                                                                                                        <td width="152" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Descripción</td>
+                                                                                                                                                        <td width="91" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Detalle<br>
+                                                                                                                                                                Adicional</td>
+                                                                                                                                                        <td width="88" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Detalle<br>
+                                                                                                                                                                Adicional</td>
+                                                                                                                                                        <td width="93" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Detalle<br>
+                                                                                                                                                                Adicional</td>
+                                                                                                                                                        <td width="63" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Precio<br>
+                                                                                                                                                                Unitario</td>
+                                                                                                                                                        <td width="79" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Descuento</td>
+                                                                                                                                                        <td width="54" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Precio<br>
+                                                                                                                                                                Total</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">EV057</td>
+                                                                                                                                                        <td align="center" valign="middle" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">1</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Compra de Tiempo Aire</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">8.93</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">0.00</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">8.93</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">EV302</td>
+                                                                                                                                                        <td align="center" valign="middle" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">1</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Gastos Administrativos</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">0.65</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">0.00</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">0.65</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">PV288</td>
+                                                                                                                                                        <td align="center" valign="middle" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">1</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Nokia Messaging</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">19.99</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">0.00</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">19.99</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">PV002</td>
+                                                                                                                                                        <td align="center" valign="middle" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">1</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">Tarifa Básica</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">12.00</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">0.00</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">12.00</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">SUBTOTAL 12%</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">41.57</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="5" rowspan="7" align="left" valign="top" style="padding:5px; border:thin dashed #333;"><p class="tit">Información Adicional</p>
+                                                                                                                                                            <p class="sub-tit">Dirección: CDLA NAVAL NORTE MZ 5 V12.</p>
+                                                                                                                                                            <p class="sub-tit">Teléfono: 0993260907</p>
+                                                                                                                                                            <p class="sub-tit">Email: afbonilla@gmail.com</p>
+                                                                                                                                                            <p class="sub-tit">Para atención de reclamos no resueltos por la operadora, llame gratis a la Superintendencia de Telecomunicaciones al 1800-567-567 o al número 159 desde su celular, también puede hacerlo escribiendo al correo electrónico cir@supertel.gob.ec</p>
+                                                                                                                                                        </td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">SUBTOTAL 0%</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">&nbsp;</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">SUBTOTAL No Objeto IVA</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">0.00</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">SUBTOTAL</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">41.57</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">TOTAL Descuento</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">0.00</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">ICE</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;"></td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">IVA 12%</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">4.99</td>
+                                                                                                                                                    </tr>
+
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                        <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">VALOR TOTAL</td>
+                                                                                                                                                        <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">46.56</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    <!--
+                                                                                                                                                  <tr >
+                                                                                                                                                    <td height="22" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                    <td style="padding:5px;">&nbsp;</td>
+                                                                                                                                                    <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                    <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                    <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                            <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                            <td class="sub-tit" style="padding:5px;">&nbsp;</td>
+                                                                                                                                                    <td colspan="2" class="sub-tit" style="padding:5px; border:thin dashed #333;" align="left">VALOR TOTAL</td>
+                                                                                                                                                    <td align="center" valign="middle" class="sub-tit" style="padding:5px; border:thin dashed #333;">46.56</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                    -->
+                                                                                                                                                </tbody></table></td>
+                                                                                                                                    </tr>
+                                                                                                                                    </tbody></table>
+                                                                                                                                    <!--</div>-->
+                                                                                                                                    <br>
+                                                                                                                                        <table width="36" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                                                                            <tbody><tr>
+                                                                                                                                                    <td width="36"><a href="ifr.php?idServicio=993260907" target="_blank"><img src="imprimir.png" width="37" height="37" border="0"></a></td>
+                                                                                                                                                </tr>
+                                                                                                                                            </tbody></table>
+
+
+
+                                                                                                                                        </body>
+                                                                                                                                        </html>
